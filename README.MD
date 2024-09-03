@@ -83,7 +83,7 @@ const db = pgp('jdbc:postgresql://localhost:5432/postgres');
    Если вы хотите создать новую миграцию, выполните команду:
 
    ```bash
-   npx knex migrate:make migration_name --knexfile knexfile.ts --env development
+   npx knex migrate:make migration_name --knexfile src/database/knexfile.ts --env development
    ```
 
    Замените `migration_name` на название вашей миграции.
@@ -93,7 +93,7 @@ const db = pgp('jdbc:postgresql://localhost:5432/postgres');
    Чтобы накатить миграции, выполните команду:
 
    ```bash
-   npx knex migrate:latest --knexfile knexfile.ts --env development
+   npx knex migrate:latest --knexfile src/database/knexfile.ts --env development
    ```
 
    Эта команда применит все миграции, которые еще не были применены, и создаст необходимые таблицы в базе данных.
@@ -103,13 +103,13 @@ const db = pgp('jdbc:postgresql://localhost:5432/postgres');
    Если вам нужно откатить последнюю миграцию, выполните команду:
 
    ```bash
-   npx knex migrate:rollback --knexfile knexfile.ts --env development
+   npx knex migrate:rollback --knexfile src/database/knexfile.ts --env development
    ```
 
    Для полного отката всех миграций можно использовать:
 
    ```bash
-   npx knex migrate:rollback --all --knexfile knexfile.ts --env development
+   npx knex migrate:rollback --all --knexfile src/database/knexfile.ts --env development
    ```
 
 ## Примечания

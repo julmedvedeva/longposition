@@ -4,29 +4,29 @@ const config: { [key: string]: Knex.Config } = {
   development: {
     client: 'pg',
     connection: {
-      host: 'localhost',
-      user: 'your_username',
-      password: 'your_password',
-      database: 'your_password',
+      host: 'your-host',
+      user: 'your-username',
+      password: 'your-password',
+      database: 'your-database-name',
     },
     migrations: {
-      directory: './src/database/migrations',
+      directory: './migrations',
       extension: 'ts'
     },
     seeds: {
-      directory: './src/database/seeds',
+      directory: './seeds',
     },
   },
   production: {
     client: 'pg',
     connection: {
-      host: 'localhost',
-      user: 'your_username',
-      password: 'your_password',
-      database: 'your_password',
+      host: 'your-host',
+      user: 'your-username',
+      password: 'your-password',
+      database: 'your-database-name',
     },
     migrations: {
-      directory: './src/database/migrations',
+      directory: './migrations',
       extension: 'ts'
     },
     seeds: {
