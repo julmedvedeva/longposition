@@ -5,9 +5,9 @@ const config: { [key: string]: Knex.Config } = {
     client: 'pg',
     connection: {
       host: 'localhost',
-      user: 'postgres',
-      password: '12345',
-      database: 'poslong',
+      user: 'your_username',
+      password: 'your_password',
+      database: 'your_password',
     },
     migrations: {
       directory: './src/database/migrations',
@@ -21,9 +21,9 @@ const config: { [key: string]: Knex.Config } = {
     client: 'pg',
     connection: {
       host: 'localhost',
-      user: 'postgres',
-      password: '12345',
-      database: 'mydatabase',
+      user: 'your_username',
+      password: 'your_password',
+      database: 'your_password',
     },
     migrations: {
       directory: './src/database/migrations',
